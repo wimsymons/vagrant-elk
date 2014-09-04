@@ -33,6 +33,8 @@ cd /var/www
 tar zxf /vagrant/kibana-3.0.1.tar.gz
 mv kibana-3.0.1/* .
 rmdir kibana-3.0.1
+cd /var/www/app/dashboards
+cp -pf logstash.json default.json
 
 # install Logstash
 cd /opt
